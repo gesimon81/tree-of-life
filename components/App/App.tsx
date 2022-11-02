@@ -1722,7 +1722,7 @@ export default function Canvas() {
           onMouseDown={handlePointerDown}
           onMouseUp={handlePointerUp}
           onMouseMove={handlePointerMove}
-          onWheel={(e) => adjustZoom(e.deltaY * SCROLL_SENSITIVITY, null)}
+          onWheel={(e) => adjustZoom(e.deltaY * SCROLL_SENSITIVITY * -1, null)}
           ref={ref}
           width={width}
           height={height}
